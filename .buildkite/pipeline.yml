@@ -4,7 +4,10 @@ steps:
     key: build
 
   - label: ":white_check_mark: Test"
-    command: echo "Test the rocket"
+    command: |
+      echo "🧪 Running rocket tests..."
+      ./run_tests.sh
+    artifact_paths: "test-results.xml"
     key: test
     depends_on: build
 
