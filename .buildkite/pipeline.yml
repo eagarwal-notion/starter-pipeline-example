@@ -5,6 +5,9 @@ steps:
 
   - label: ":white_check_mark: Test"
     command: |
+      echo "🧪 Installing uv..."
+      curl -LsSf https://astral.sh/uv/install.sh | sh
+      source $HOME/.cargo/env
       echo "🧪 Running rocket tests..."
       ./run_tests.sh
     artifact_paths: "test-results.xml"
