@@ -6,3 +6,8 @@ requires-python = ">=3.10"
 dependencies = [
     "pytest>=9.0.1",
 ]
+
+[dependency-groups]
+dev = [
+    "buildkite-test-collector>=1.1.1",
+]
