@@ -14,7 +14,7 @@ steps:
     key: test
     depends_on: build
     env:
-      BUILDKITE_TEST_ENGINE_API_ACCESS_TOKEN: hJ3rtEfsAfzfE1Xp9nn4iJNF
+      BUILDKITE_ANALYTICS_TOKEN: hJ3rtEfsAfzfE1Xp9nn4iJNF
 
   - label: ":rocket: Deploy"
     command: |
